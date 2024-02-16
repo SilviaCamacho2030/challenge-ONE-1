@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>👩‍💻 challenge ONE #1</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="sylvie_design_logo.jpg"
+        alt="logo de la creadora de la pagina"
+      />
+      <p class="titulo">🔏 Encriptador Online ...</p>
+    </header>
+    <main>
+      <section class="campo1">
+        <textarea
+          class="textarea"
+          placeholder="Escribe tu texto aquí..."
+          input
+          type="text"
+          id="textoEncriptado"
+          onkeyup="convertirAMinusculas(this)"
+          oninput="eliminarCaracteresEspeciales(this)"
+        ></textarea>
+        <h4 class="letras">⚠️ Solo letras minusculas y sin acentos.</h4>
+        <div class="contenedor_botones">
+          <button type="button" id="botonEncriptado" class="boton_encriptar">
+            🔍 Encriptar
+          </button>
+          <button
+            type="button"
+            id="botonDesencriptado"
+            class="boton_desencriptar"
+          >
+            🕵️‍♀️ Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="campo2">
+        <div class="contenedor_imagen">
+          <img src="imagen.jpg" alt="Señora viendo con lupa una hoja"
+        </div>
+        <div class="contenedor_subtitulo">
+          <h3>Ningún mensaje fue encontrado.</h3>
+        </div>
+        <div class="contenedor_parrado">
+          <p>Escribe el texto que desea encriptar o desencriptar.</p>
+        </div>
+        <textarea
+          name="resultado"
+          id="textoDesencriptado"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button type="button" id="botonCopiar" class="boton_copiar">
+          💻 Copiar
+        </button>
+      </section>
+    </main>
+    <footer>
+      Pagina diseñada por Silvia M. Camacho, para el primer challenge de Alura
+      Latam y Oracle ONE.
+    </footer>
+  </body>
+  <script>
+    var button = document.querySelector("#botonEncriptado");
+    button.onclick = encriptar;
+    var button2 = document.querySelector("#botonDesencriptado");
+    button2.onclick = desencriptar;
+    var button3 = document.querySelector("#botonCopiar");
+    button3.onclick = copiar;
+  </script>
+</html>

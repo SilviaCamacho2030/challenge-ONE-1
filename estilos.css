@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #d6cccb;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: lightslategray;
+}
+
+img {
+  width: 110px;
+}
+
+.titulo {
+  position: absolute;
+  top: 8px;
+  left: 550px;
+  color: whitesmoke;
+  font-size: 35px;
+}
+
+header img {
+  position: absolute;
+  margin-left: 105px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+main {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  height: 100%;
+  background-color: blanchedalmond;
+  border-radius: 20px;
+}
+
+.campo1 {
+  width: 60%;
+  margin-left: 30px;
+}
+
+.campo2 {
+  width: 30%;
+  margin-right: 30px;
+}
+
+section div img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+.contenedor_imagen {
+  width: 100%;
+  height: 60px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.contenedor_subtitulo {
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.contenedor_parrafo {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.textarea {
+  width: 80%;
+  height: 60%;
+  resize: none;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 25px;
+  border-radius: 20px;
+  border: 0;
+}
+.letras {
+  text-align: center;
+}
+textarea {
+  width: 80%;
+  height: 250%;
+  border-radius: 20px;
+  border: 0;
+  text-align: center;
+  font-size: 20px;
+  resize: none;
+}
+
+.contenedor_botones {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.boton_encriptar,
+.boton_desencriptar,
+.boton_copiar {
+  width: 40%;
+  height: 60px;
+}
+
+.boton_encriptar {
+  background-color: lightslategray;
+  color: bisque;
+  font-size: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.boton_desencriptar {
+  background-color: lightslategray;
+  color: bisque;
+  font-size: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.boton_encriptar:hover {
+  background-color: #d6cccb;
+  color: black;
+}
+
+.boton_desencriptar:hover {
+  background-color: #d6cccb;
+  color: black;
+}
+
+.boton_copiar {
+  background-color: lightslategray;
+  color: bisque;
+  font-size: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 50px;
+  margin: auto;
+}
+
+.boton_copiar:hover {
+  background-color: #d6cccb;
+  color: black;
+}
+
+footer {
+  font-size: 25px;
+  text-align: center;
+  color: whitesmoke;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background-color: lightslategray;
+}
